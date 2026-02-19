@@ -1,0 +1,54 @@
+{
+    "summary": {
+        "total_pnl": 31515.0,
+        "total_trades": 137,
+        "win_rate": 67.88,
+        "avg_profit": 1092.2983870967741,
+        "avg_loss": -1592.471590909091,
+        "max_drawdown": -9881.25
+    },
+    "top_winners": [
+        {
+            "Symbol": "NIFTY25N0425400PE",
+            "Realized P&L": 3881.25
+        },
+        {
+            "Symbol": "NIFTY25APR23400PE",
+            "Realized P&L": 2973.75
+        },
+        {
+            "Symbol": "NIFTY2550823800PE",
+            "Realized P&L": 2325.0
+        },
+        {
+            "Symbol": "NIFTY2572425950CE",
+            "Realized P&L": 2287.5
+        },
+        {
+            "Symbol": "NIFTY25APR23000PE",
+            "Realized P&L": 2186.25
+        }
+    ],
+    "top_losers": [
+        {
+            "Symbol": "NIFTY2550824300PE",
+            "Realized P&L": -9881.25
+        },
+        {
+            "Symbol": "NIFTY25MAY24800PE",
+            "Realized P&L": -5085.0
+        },
+        {
+            "Symbol": "NIFTY2543024600CE",
+            "Realized P&L": -3056.25
+        },
+        {
+            "Symbol": "NIFTY2550824400CE",
+            "Realized P&L": -3030.0
+        },
+        {
+            "Symbol": "NIFTY2582124900CE",
+            "Realized P&L": -2876.25
+        }
+    ]
+}

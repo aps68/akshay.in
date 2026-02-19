@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshay P S - Commerce Professional & Trader CV</title>
+    <meta name="description"
+        content="Professional portfolio and CV of Akshay P S, a commerce professional specializing in financial accounting, stock market trading, and technical analysis. Based in Thrissur, Kerala.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="dark-theme">
+    <canvas id="bg-canvas"></canvas>
+    <div class="cursor-glow"></div>
+
+    <!-- Background Watermark -->
+    <div class="watermark-container">
+        <div class="watermark-text top-left">FOCUS</div>
+        <div class="watermark-text top-right">DISCIPLINE</div>
+        <div class="watermark-text bottom-left">CONSISTENCY</div>
+        <div class="watermark-text center-icon">$</div>
+        <div class="bull-icon"><i class="fa-solid fa-arrow-trend-up"></i></div> <!-- Bull Market Representation -->
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">APS</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#performance">Performance</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <span class="subtitle">Hello, I am</span>
+                <h1 class="glitch" data-text="Akshay P S">Akshay P S</h1>
+                <h2 class="typing-roles">Commerce Professional | Trader | Analyst</h2>
+                <p class="hero-desc">Data-driven financial strategist leveraging <strong>Technical Analysis</strong> and
+                    Price Action to execute high-probability trades in Futures & Options and Forex markets.</p>
+                <div class="cta-group">
+                    <a href="#performance" class="btn primary">View Performance</a>
+                    <a href="#contact" class="btn secondary">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <!-- Abstract trading chart visualization handled by JS canvas or CSS -->
+                <div class="candlestick-chart">
+                    <div class="candle up" style="--h: 60px; --d: 0s;"></div>
+                    <div class="candle down" style="--h: 40px; --d: 0.2s;"></div>
+                    <div class="candle up" style="--h: 80px; --d: 0.4s;"></div>
+                    <div class="candle up" style="--h: 50px; --d: 0.6s;"></div>
+                    <div class="candle down" style="--h: 90px; --d: 0.8s;"></div>
+                    <div class="candle up" style="--h: 120px; --d: 1s;"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I am a results-driven commerce professional with expertise in financial accounting, trading, and
+                        business management based in Thrissur, Kerala.</p>
+                    <p>All my trades are taken based on rigorous <strong>Technical Analysis</strong>. I analyze market
+                        structure, price action, and key levels to identify high-probability setups.</p>
+                    <ul class="highlights">
+                        <li><i class="fa-solid fa-check"></i> 1-Year Verified P&L in Stock Market Trading</li>
+                        <li><i class="fa-solid fa-check"></i> 3-Month Verified Performance in Forex Trading</li>
+                        <li><i class="fa-solid fa-check"></i> MBA Candidate (ongoing)</li>
+                    </ul>
+                </div>
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="3">0</span>
+                        <span class="stat-label">Years Trading Exp +</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="12">0</span>
+                        <span class="stat-label">Months Verified Stocks</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="3">0</span>
+                        <span class="stat-label">Months Verified Forex</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="performance" class="performance">
+            <div class="section-header">
+                <h2>Live Performance</h2>
+                <div class="line"></div>
+                <p class="section-subtitle">Verified 1-Year P&L Report (2025)</p>
+            </div>
+
+            <div class="pnl-dashboard">
+                <div class="pnl-card main-pnl">
+                    <h3>Total Realized P&L</h3>
+                    <div class="pnl-value positive">+₹31,515</div>
+                    <span class="pnl-period">Feb 2025 - Dec 2025</span>
+                </div>
+
+                <div class="pnl-grid">
+                    <div class="pnl-stat">
+                        <span class="label">Win Rate</span>
+                        <span class="value" id="win-rate">--%</span>
+                        <div class="progress-bar">
+                            <div class="progress" id="win-rate-bar" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="pnl-stat">
+                        <span class="label">Total Trades</span>
+                        <span class="value" id="total-trades">--</span>
+                    </div>
+                    <div class="pnl-stat">
+                        <span class="label">Avg Profit</span>
+                        <span class="value positive" id="avg-profit">--</span>
+                    </div>
+                    <div class="pnl-stat">
+                        <span class="label">Avg Loss</span>
+                        <span class="value negative" id="avg-loss">--</span>
+                    </div>
+                </div>
+
+                <div class="pnl-actions">
+                    <a href="files/report.xlsx" download="Akshay_PNL_Report.xlsx" class="btn primary"><i
+                            class="fa-solid fa-download"></i> Download
+                        Full P&L Report</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience">
+            <div class="section-header">
+                <h2>Experience</h2>
+                <div class="line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Present</div>
+                    <div class="timeline-content">
+                        <h3>Stock & Forex Trader</h3>
+                        <h4>Self-Employed</h4>
+                        <p>Specializing in Futures & Options. Converting market analysis into profitable trades through
+                            <strong>Technical Analysis</strong>, price action strategies, and disciplined risk
+                            management.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Past</div>
+                    <div class="timeline-content">
+                        <h3>Teller</h3>
+                        <h4>Bandidos Pitstop</h4>
+                        <p>Managed cash operations and customer transactions efficiently. Ensured regulatory compliance
+                            and maintained accurate financial records.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-header education-header">
+                <h2>Education</h2>
+                <div class="line"></div>
+            </div>
+            <div class="education-grid">
+                <div class="edu-card">
+                    <div class="edu-year">Ongoing</div>
+                    <h3>MBA</h3>
+                    <p>Bharathiar University</p>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-year">2022</div>
+                    <h3>B.Com</h3>
+                    <p>Calicut University</p>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-year">2019</div>
+                    <h3>Higher Secondary</h3>
+                    <p>GHSS Mullassery</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="section-header">
+                <h2>Skills & Certifications</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="skills-wrapper">
+                <h3>Trading & Financial Markets</h3>
+                <div class="skill-tags">
+                    <span>Futures & Options (F&O)</span>
+                    <span>Forex Trading</span>
+                    <span>Technical Analysis</span>
+                    <span>Price Action Strategies</span>
+                    <span>Risk Management</span>
+                    <span>Capital Management</span>
+                    <span>P&L Analysis</span>
+                </div>
+
+                <h3>Accounting & Technical Tools</h3>
+                <div class="skill-tags">
+                    <span>Tally Accounting (Certified)</span>
+                    <span>GST</span>
+                    <span>Financial Accounting</span>
+                    <span>Microsoft Excel</span>
+                    <span>Data Analysis</span>
+                </div>
+            </div>
+
+            <div class="certifications">
+                <h3>Certifications</h3>
+                <div class="cert-grid">
+                    <div class="cert-card">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <p>Funded Account Certificate (Tier 1)</p>
+                        <span>Proprietary Trading Firm</span>
+                        <a href="files/certificate_1.pdf" target="_blank" class="cert-link"><i
+                                class="fa-solid fa-file-pdf"></i> Funded Acc Certificates</a>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fa-solid fa-trophy"></i>
+                        <p>Funded Account Certificate (Tier 2)</p>
+                        <span>Proprietary Trading Firm</span>
+                        <a href="files/certificate_2.pdf" target="_blank" class="cert-link"><i
+                                class="fa-solid fa-file-pdf"></i> Funded Acc Certificates</a>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fa-solid fa-certificate"></i>
+                        <p>Professional Diploma in Computerised Financial Accounting</p>
+                        <span>Kerala State Rural Women’s Electronics Industrial Co-op Federation</span>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fa-solid fa-certificate"></i>
+                        <p>TallyACE Certification</p>
+                        <span>Tally Education & Distribution Services Pvt. Ltd.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="section-header">
+                <h2>Contact Me</h2>
+                <div class="line"></div>
+            </div>
+            <div class="contact-container">
+                <p>Feel free to reach out for collaborations or inquiries.</p>
+
+                <div class="contact-details">
+                    <a href="mailto:akshaypayakkal@gmail.com" class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>akshaypayakkal@gmail.com</span>
+                    </a>
+                    <a href="tel:+919400361911" class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+91 9400361911</span>
+                    </a>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Thrissur, Kerala – 680509</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Certificate Modal -->
+    <div id="cert-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 id="modal-title">Certificate View</h3>
+            <div id="pdf-container">
+                <!-- PDF embed will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Akshay P S. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
